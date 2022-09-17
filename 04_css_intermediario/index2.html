@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        .static{
+            position: static;
+        }
+
+        .relative{
+            top: 50vh;
+            left: 50vw;
+            position: relative;
+            /*podemos usar as outras posições como top. bottom, right, left*/
+        }
+
+        .fixed{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+
+        .quadrado{
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+        .bg-blue{
+            background-color: blue;
+        }
+
+        .bg-red{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="static quadrado bg-blue"></div>
+    <div class="relative quadrado bg-red"></div>
+    <div class="fixed quadrado bg-red"></div>
+</body>
+</html>
